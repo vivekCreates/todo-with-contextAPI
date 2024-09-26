@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #121212;
+}
+button:hover{
+  cursor: pointer;
+}
+.app{
+  width: 100%;
+  height: auto;
+  color: azure;
+  padding: 3rem 0rem;
+}
+.heading{
+  text-align: center;
+
+}
+.input-box{
+  width: 35rem;
+  margin: 1rem auto;
+}
+.app .input-box input{
+  padding: .5rem 1rem;
+  background-color: #555;
+  width: 85%;
+  font-size: 1.1rem;
+  color: azure;
+  border: none;
+  border-radius: 5px;
+}
+
+.app .btn{
+  width: 14%;
+  padding: .4rem 1rem;
+  margin-left: 1%;
+  background-color: rgb(103, 154, 103);
+  border-radius: 5px;
+  color: azure;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.app .btn:hover{
+  background-color: rgba(103, 154, 103, 0.833);
+}
+.todo-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 5px;
+}
+.todo{
+  width: 62%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+
+}
+.todo-input{
+  width: 70%;
+  margin-left: 1.3rem;
+  height: 2.7rem;
+  display: flex;
+  border-radius: 2px;
+  /* background-color: rgb(102, 102, 146); */
+  
+
+}
+.not-complete{
+  background-color: rgb(102, 102, 146);
+}
+.complete{
+  background-color: rgb(103, 154, 103);
+  text-decoration: line-through;
+}
+
+/* .todo-complete{
+  width: 70%;
+  margin-left: 1.3rem;
+  height: 2.7rem;
+  display: flex;
+  border-radius: 2px;
+  background-color: rgb(85, 179, 85);
+  text-decoration: line-through;
+} */
+.todo-input #todo-box{
+  height: 100%;
+  width: 85%;
+  padding: .5rem 3rem;
+  border: none;
+  outline: none;
+  /* background-color: transparent; */
+  color: azure;
+  font-size: 1.1rem;
+
+  /* text-decoration: line-through; */
+ 
+}
+
+
+.todo-input #checkbox{
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top:12px;
+  left:25px;
+}
+.todo .img-container{
+  width: 10rem;
+  height: 6rem;
+  overflow: hidden;
+}
+
+.img-container img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.todo .button-box{
+  
+display: flex;
+align-items: center;
+justify-content: center;
+width: 15%;
+gap: .4rem;
+
+}
+.button-box button{
+  font-size: 1rem;
+  border-radius: 2px;
+  border: none;
+  padding: 2px;
+}
